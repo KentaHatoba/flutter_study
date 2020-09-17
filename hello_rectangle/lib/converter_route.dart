@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
-import 'unit.dart';
+import 'package:hello_rectangle/unit.dart';
 
 class ConverterRoute extends StatelessWidget {
+  final Color color;
   final List<Unit> units;
 
-  // TODO: Pass in the [Category]'s color
   const ConverterRoute({
+    @required this.color,
     @required this.units,
-  }) : assert(units != null);
+  })  : assert(color != null),
+        assert(units != null);
 
   @override
   Widget build(BuildContext context) {
     final unitWidgets = units.map((Unit unit) {
-      // TODO: Set the color for this Container
       return Container(
+        color: color,
         margin: EdgeInsets.all(8.0),
         padding: EdgeInsets.all(16.0),
         child: Column(
