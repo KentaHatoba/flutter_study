@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+final _rowHeight = 100.0;
+final _borderRadius = BorderRadius.circular(_rowHeight / 2);
+
 class Category extends StatelessWidget {
   final String name;
   final ColorSwatch color;
@@ -20,29 +23,27 @@ class Category extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: Container(
-        height: 100.0,
+        height: _rowHeight,
         child: Padding(
           padding: EdgeInsets.all(8.0),
           child: InkWell(
             onTap: () {
               print('I was tapped!');
             },
-            borderRadius: BorderRadius.circular(
-              50.0,
-            ),
-            splashColor: this.color,
+            borderRadius: _borderRadius,
+            splashColor: color,
             child: Row(
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.all(16.0),
                   child: Icon(
-                    this.icon,
+                    icon,
                     size: 60.0,
                   ),
                 ),
                 Center(
                   child: Text(
-                    this.name,
+                    name,
                     style: TextStyle(
                       fontSize: 24.0,
                     ),
