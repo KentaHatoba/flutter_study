@@ -4,7 +4,13 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Scaffold(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'I Am Rich',
+          ),
+        ),
+      ),
     ),
   );
 }
