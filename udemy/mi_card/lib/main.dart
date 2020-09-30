@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                 'Kenta Hatoba',
                 style: TextStyle(
                   fontFamily: 'Pacifico',
-                  fontSize: 40.0,
+                  fontSize: 36.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'SourceSansPro',
                   color: Colors.teal.shade100,
-                  fontSize: 20.0,
+                  fontSize: 16.0,
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
                 ),
