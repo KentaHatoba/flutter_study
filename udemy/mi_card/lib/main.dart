@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
               Text(
                 'Kenta Hatoba',
                 style: TextStyle(
+                  fontFamily: 'Pacifico',
                   fontSize: 40.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
