@@ -23,11 +23,17 @@ class DicePage extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: FlatButton(
+              onPressed: () {
+                print('左のボタンが押されました');
+              },
               child: Image.asset('images/dice1.png'),
             ),
           ),
           Expanded(
             child: FlatButton(
+              onPressed: () {
+                print('右のボタンが押されました');
+              },
               child: Image.asset('images/dice1.png'),
             ),
           ),
