@@ -8,12 +8,7 @@ void main() {
   );
 }
 
-class BallPage extends StatefulWidget {
-  @override
-  _BallPageState createState() => _BallPageState();
-}
-
-class _BallPageState extends State<BallPage> {
+class BallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
